@@ -13,5 +13,7 @@ RUN apk add --update --no-cache tzdata curl wget bash git gettext \
 
 WORKDIR /aliyun-ossutil
 
+RUN ln -sf /dev/stdout /aliyun-ossutil/ossutil.log
+
 RUN curl -o /usr/local/bin/ossutil "https://gosspublic.alicdn.com/ossutil/${OSSUTIL_VERSION}/ossutil64" \
     && chmod +x /usr/local/bin/ossutil
