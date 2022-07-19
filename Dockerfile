@@ -15,8 +15,3 @@ WORKDIR /aliyun-ossutil
 
 RUN curl -o /usr/local/bin/ossutil "https://gosspublic.alicdn.com/ossutil/${OSSUTIL_VERSION}/ossutil64" \
     && chmod +x /usr/local/bin/ossutil
-
-RUN adduser -D -u 1000 www www \
-    && chown www:www -R /home/www
-
-USER www
