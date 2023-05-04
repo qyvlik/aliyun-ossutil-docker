@@ -28,7 +28,7 @@ jobs:
         with:
           push: true
           build-args: |
-            OSSUTIL_VERSION=1.7.14
+            OSSUTIL_VERSION=1.7.15
           tags: |
-            qyvlik/aliyun-ossutil:1.7.14
-            qyvlik/yairm210-unciv:latest
+            qyvlik/aliyun-ossutil:1.7.15
+            qyvlik/aliyun-ossutil:latest

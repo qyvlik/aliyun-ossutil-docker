@@ -21,7 +21,7 @@ accessKeySecret=B***8
 docker run --rm -it \
   -v "./.ossutilconfig:/home/www/.ossutilconfig" \
   -v "./data:/data"
-  qyvlik/aliyun-ossutil:1.7.14 \
+  qyvlik/aliyun-ossutil:1.7.15 \
   ossutil \
     sync \
     oss://examplebucket \
