@@ -27,6 +27,8 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/aliyun-ossutil:1.7.13
           build-args: |
-            OSSUTIL_VERSION=1.7.13
+            OSSUTIL_VERSION=1.7.14
+          tags: |
+            qyvlik/aliyun-ossutil:1.7.14
+            qyvlik/yairm210-unciv:latest

@@ -2,7 +2,7 @@ FROM alpine:3
 
 ARG TIME_ZONE=Asia/Shanghai
 ARG APK_REPOSITORIES=mirrors.aliyun.com
-ARG OSSUTIL_VERSION=1.7.13
+ARG OSSUTIL_VERSION=1.7.14
 
 RUN sed -i "s/dl-cdn.alpinelinux.org/${APK_REPOSITORIES}/g" /etc/apk/repositories
 
